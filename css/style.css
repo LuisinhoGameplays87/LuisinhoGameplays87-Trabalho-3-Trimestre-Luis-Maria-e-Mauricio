@@ -1,0 +1,168 @@
+body{
+    background-color: rgb(15, 15, 75);
+    color: aliceblue;
+    height: 100%;
+    margin: 0;
+}
+
+.overlay, .overlay1 {   
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+
+.overlay-content, .overlay-content1 {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+
+.overlay a, .overlay1 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+}
+
+
+.overlay a:hover, .overlay a:focus, .overlay1 a:hover, .overlay1 a:focus{
+    color: #f1f1f1;
+}
+
+
+.overlay .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.closebtn1{
+    position: absolute;
+    top: 20px;
+    font-size: 70px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay1 a {font-size: 20px}
+    .overlay1 .closebtn1 {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.img{
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    z-index: 0;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.400;
+}
+
+.header{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(39, 37, 148);
+    font-size: 2vw;
+    border-bottom: 2px solid aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header p{
+    position: relative;
+    top: 2%;
+}
+
+.main{
+    background-color: rgb(30, 28, 116);
+    border: 1.5px solid aliceblue;
+    border-radius: 5%;
+    height: 66vh;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 2vh;
+}
+
+.main p{
+    top: 10%;
+    font-size: 1.1vw;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.main span{
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(15, 15, 75);
+    border-radius: 10%;
+    padding: 1.5%;
+    font-size: 1vw;
+    left: 45%;
+    top: 20%;
+}
+
+.bar span{
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(15, 15, 75);
+    border-radius: 10%;
+    padding: 1.5%;
+    font-size: 1vw;
+    left: 1%;
+}
+
+.main span:hover, .bar span:hover{
+    background-color: rgb(7, 7, 53);
+    text-decoration: underline;
+}
+
+.footer{
+    background-color: rgb(16, 15, 65);
+    position: relative;
+    top: 2vh;
+    height: 14vh;
+    font-size: 1vw;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.footer p{
+    position: relative;
+    top: 25%;
+}
